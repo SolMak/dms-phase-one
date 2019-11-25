@@ -1,0 +1,58 @@
+{
+    "name": "sick-fits",
+    "version": "0.0.1",
+    "description": "👟 sick fits - frontend",
+    "keywords": [],
+    "homepage": "https://github.com/bradgarropy/sick-fits",
+    "bugs": {
+        "url": "https://github.com/bradgarropy/sick-fits/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Brad Garropy",
+        "email": "bradgarropy@gmail.com",
+        "url": "https://bradgarropy.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bradgarropy/sick-fits"
+    },
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "test": "jest --watch"
+    },
+    "dependencies": {
+        "@apollo/react-hooks": "^3.1.0",
+        "@apollo/react-ssr": "^3.1.0",
+        "apollo-boost": "^0.4.4",
+        "date-fns": "^2.1.0",
+        "dotenv": "^8.1.0",
+        "downshift": "^3.3.1",
+        "graphql": "^14.5.4",
+        "isomorphic-unfetch": "^3.0.0",
+        "lodash.debounce": "^4.0.8",
+        "next": "^9.0.5",
+        "nprogress": "^0.2.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "react-stripe-checkout": "^2.6.3",
+        "styled-components": "^4.3.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.6.0",
+        "@types/react": "^16.9.13",
+        "@types/typescript": "^2.0.0",
+        "babel-eslint": "^10.0.3",
+        "babel-plugin-styled-components": "^1.10.6",
+        "eslint": "^6.3.0",
+        "eslint-config-bradgarropy": "^1.2.0",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-react": "^7.14.3",
+        "eslint-plugin-react-hooks": "^2.0.1",
+        "typescript": "^3.7.2"
+    },
+    "peerDependencies": {}
+}
