@@ -13,7 +13,7 @@ class MyApp extends App {
                 <Page>
                     <Component {...pageProps}/>
                 </Page>
-            </ApolloProvider>
+            </ApolloProvider> 
         )
     }
 }
