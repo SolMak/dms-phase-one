@@ -17,5 +17,5 @@ class MyApp extends App {
         )
     }
 }
-
+ 
 export default withApollo(MyApp)
