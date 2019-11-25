@@ -1,22 +1,41 @@
+import React from 'react';
+import { ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { red } from '@material-ui/core/colors';
+import Meta from "./Meta"
+import Header from "./Header"
 
-import styled from "styled-components"
+// Create a theme instance.
+export const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#556cd6',
+    },
+    secondary: {
+      main: '#19857b',
+    },
+    error: {
+      main: red.A400,
+    },
+    background: {
+      default: '#fff',
+    },
+  },
+});
 
-const PageStyle = styled.div`
-    width: 1200px;
-    min-width: 300px;
-    margin: 0 auto;
-    background: peachpuff;
-    .row {
-        width: 100%;
-        display:flex;
-    }
-`;
-
-const Page = () => {
+const Page = ({children}) => {
     return (
-    <PageStyle>
-        <h1>Hello Now</h1>
-    </PageStyle>
-    )
-}
+      <React.Fragment>
+        <ThemeProvider theme={theme}>
+          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+          <Meta />
+          <Header />
+          <CssBaseline />
+          {children}
+        </ThemeProvider>
+      </React.Fragment>
+    );
+  }
+
 export default Page
