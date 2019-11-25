@@ -7,6 +7,6 @@ const IndexPage = () => {
             <Items/>
         </>
     )
-}
+} 
 
 export default IndexPage
