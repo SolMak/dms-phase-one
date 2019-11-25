@@ -42,8 +42,6 @@ query MyQuery {
       }
     }
 }
-
-
 `
 
 const ItemList = styled.div`

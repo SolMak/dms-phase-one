@@ -1,41 +1,22 @@
-import React from "react"
-import PropTypes from "prop-types"
+
 import styled from "styled-components"
-import {ThemeProvider} from "styled-components"
 
-import GlobalStyles from "../styles/GlobalStyles"
-import theme from "../styles/theme"
-import Meta from "./Meta"
-import Header from "./Header"
-
-const PageWrapper = styled.div`
-    background: white;
-    color: ${({theme}) => theme.black};
-`
-
-const Container = styled.div`
-    max-width: ${({theme}) => theme.maxWidth};
+const PageStyle = styled.div`
+    width: 1200px;
+    min-width: 300px;
     margin: 0 auto;
-    padding: 2rem;
-`
+    background: peachpuff;
+    .row {
+        width: 100%;
+        display:flex;
+    }
+`;
 
-const Page = ({children}) => {
+const Page = () => {
     return (
-        <ThemeProvider theme={theme}>
-            <PageWrapper>
-                <Meta/>
-                <Header/>
-                <GlobalStyles/>
-                <Container>
-                    {children}
-                </Container>
-            </PageWrapper>
-        </ThemeProvider>
+    <PageStyle>
+        <h1>Hello Now</h1>
+    </PageStyle>
     )
 }
-
-Page.propTypes = {
-    children: PropTypes.node,
-}
-
 export default Page

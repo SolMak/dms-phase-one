@@ -1,8 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
-import Link from "next/link"
-import {formatPrice} from "../utils/money"
-import {ItemWrapper, ItemTitle, ItemButtons, PriceTag} from "../styles"
+
 
 const Item = ({item}) => {
     const {id, title } = item
@@ -11,25 +8,12 @@ const Item = ({item}) => {
     const price = "12.99"
     const slug = item.slug
 
-    console.log(item)
-
     return (
-        <ItemWrapper>
-            {image && <img src={image} alt={title}/>}
-            <ItemTitle>
-                    <a>{title}</a>
-            </ItemTitle>
-            <PriceTag>{formatPrice(price)}</PriceTag>
-            <p>{description}</p>
-            <ItemButtons>
-                <a>Edit ✍🏼</a>
-            </ItemButtons>
-        </ItemWrapper>
+        <>    
+        {image && <img src={image} alt={title}/>}
+        <p>{title}</p>
+        <p>{description}</p>
+        </>
     )
 }
-
-Item.propTypes = {
-    item: PropTypes.object.isRequired,
-}
-
 export default Item
