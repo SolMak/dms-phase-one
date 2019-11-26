@@ -18,7 +18,7 @@ const Container = styled.div`
     padding: 2rem;
 `
 
-const Page = ({children}) => {
+const Page = ({children}) => {  
     return (
         <ThemeProvider theme={theme}>
             <PageWrapper>
