@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import {formatPrice} from "../utils/money"
-import RemoveFromCart from "./RemoveFromCart"
+import RemoveFromCart from "../../RemoveFromCart"
 
 const CartItemWrapper = styled.li`
     padding: 1rem 0;

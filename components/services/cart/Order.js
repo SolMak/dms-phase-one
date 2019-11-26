@@ -4,8 +4,8 @@ import Head from "next/head"
 import {useQuery} from "@apollo/react-hooks"
 import {gql} from "apollo-boost"
 import {formatPrice} from "../utils/money"
-import Error from "../components/Error"
-import {OrderWrapper} from "../styles"
+import Error from "../../Error"
+import {OrderWrapper} from "../../../styles"
 import {format} from "date-fns"
 
 const READ_ORDER_QUERY = gql`

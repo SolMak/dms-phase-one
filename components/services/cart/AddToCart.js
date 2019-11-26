@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {useMutation} from "@apollo/react-hooks"
 import {gql} from "apollo-boost"
-import {READ_USER_QUERY} from "./User"
+import {READ_USER_QUERY} from "../../User"
 
 const ADD_TO_CART_MUTATION = gql`
     mutation ADD_TO_CART_MUTATION($id: ID!) {

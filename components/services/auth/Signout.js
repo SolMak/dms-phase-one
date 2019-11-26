@@ -1,7 +1,7 @@
 import React from "react"
 import {useMutation} from "@apollo/react-hooks"
 import {gql} from "apollo-boost"
-import {READ_USER_QUERY} from "./User"
+import {READ_USER_QUERY} from "../user/User"
 
 const SIGNOUT_MUTATION = gql`
     mutation SIGNOUT_MUTATION {

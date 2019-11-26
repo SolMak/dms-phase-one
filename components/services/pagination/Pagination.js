@@ -5,7 +5,7 @@ import {gql} from "apollo-boost"
 import {useQuery} from "@apollo/react-hooks"
 import Head from "next/head"
 import {useRouter} from "next/router"
-import Error from "./Error"
+import Error from "../errors/Error"
 
 const PAGINATION_QUERY = gql`
     query PAGINATION_QUERY {

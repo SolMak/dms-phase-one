@@ -2,8 +2,8 @@ import React from "react"
 import {useState} from "react"
 import {useMutation} from "@apollo/react-hooks"
 import {gql} from "apollo-boost"
-import {Form} from "../styles"
-import Error from "./Error"
+import {Form} from "../../../styles"
+import Error from "../errors/Error"
 import {READ_USER_QUERY} from "./User"
 
 const SIGNIN_MUTATION = gql`

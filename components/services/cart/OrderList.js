@@ -5,10 +5,10 @@ import {useQuery} from "@apollo/react-hooks"
 import {gql} from "apollo-boost"
 import styled from "styled-components"
 import {formatPrice} from "../utils/money"
-import Error from "../components/Error"
-import {OrderWrapper} from "../styles"
+import Error from "../../Error"
+import {OrderWrapper} from "../../../styles"
 import {formatDistance} from "date-fns"
-import {OrderItem} from "../styles"
+import {OrderItem} from "../../../styles"
 import {totalItems} from "../utils/order"
 
 const READ_ORDERS_QUERY = gql`

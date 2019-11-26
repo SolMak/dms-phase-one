@@ -1,16 +1,6 @@
-import React from "react"
-
-function Copyright() {
-    return (
-        <p>Copyright Your Website</p>
-    )
+function Index() {
+    return <h2>This is the index page</h2>
 }
 
-export default function Index() {
-    return (
-        <>
-        <p>Copyright MYYYY Your Website</p>
-        <Copyright/>
-        </>
-    )
-}
+export default Index
+

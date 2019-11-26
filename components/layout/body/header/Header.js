@@ -3,9 +3,9 @@ import Link from "next/link"
 import Router from "next/router"
 import styled from "styled-components"
 import NProgress from "nprogress"
-import Cart from "./Cart"
+import Cart from "../../../services/cart/Cart"
 import Navigation from "./Navigation"
-import Search from "./Search"
+import Search from "../../../services/search/Search"
 
 Router.onRouteChangeStart = () => {
     NProgress.start()
@@ -24,7 +24,7 @@ const Logo = styled.h1`
     margin-left: 2rem;
     position: relative;
     z-index: 2;
-    transform: skew(-7deg);
+    transform: skew(-7deg); 
 
     a {
         padding: 0.5rem 1rem;
@@ -70,6 +70,7 @@ const Header = () => {
                         <a>DomainSpark</a>
                     </Link>
                 </Logo>
+                <p>Hello from header</p>
                 <Navigation/>
             </div>
 

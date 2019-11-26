@@ -1,8 +1,8 @@
 import React from "react"
 import App from "next/app"
-import Page from "../components/Page"
+import Layout from "../components/Layout/Layout"
 import {ApolloProvider} from "@apollo/react-hooks"
-import withApollo from "../init/with-apollo"
+import withApollo from "../apollo-init/with-apollo"
 
 class MyApp extends App {
     render() {
@@ -10,9 +10,9 @@ class MyApp extends App {
 
         return (
             <ApolloProvider client={apolloClient}>
-                <Page>
+                <Layout>
                     <Component {...pageProps}/>
-                </Page>
+                </Layout>
             </ApolloProvider> 
         )
     }
