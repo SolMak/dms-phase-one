@@ -2,7 +2,6 @@ import React from "react"
 import initApollo from "./init-apollo"
 import Head from "next/head"
 import {getDataFromTree} from "@apollo/react-ssr"
-import PropTypes from "prop-types";
 
 // Gets the display name of a JSX component for dev tools
 function getComponentDisplayName(Component) {
