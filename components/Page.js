@@ -4,7 +4,7 @@ import styled from "styled-components"
 import {ThemeProvider} from "styled-components"
 import Meta from "./Meta"
 import Header from "./Header"
-import GlobalStyles from "../styles/GlobalStyles"
+import GlobalStyles from "../styles/GlobalStyles"   
 import theme from "../styles/theme"
 
 const PageWrapper = styled.div`
