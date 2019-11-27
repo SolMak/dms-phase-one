@@ -4,9 +4,7 @@ import styled from "styled-components"
 import NProgress from "nprogress"
 import Logo from "./Logo"
 import Slogan from "./Slogan"
-import Cart from "../../../services/cart/Cart"
 import Navigation from "./Navigation"
-import Search from "../../../services/search/Search"
 
 Router.onRouteChangeStart = () => {
     NProgress.start()
@@ -51,10 +49,7 @@ const Header = () => {
             </div>
 
             <div className="sub-bar">
-                <Search/>
             </div>
-
-            <Cart open/>
         </HeaderStyled>
     )
 }

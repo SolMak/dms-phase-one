@@ -1,3 +1,4 @@
+import React from "react"
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -5,7 +6,7 @@ const Container = styled.div`
     margin: 0 auto;
     padding: 2rem;
 `
-
+ 
 const ContentArea = ({children}) => {  
     return (
         <Container>
